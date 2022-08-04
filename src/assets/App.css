@@ -130,7 +130,7 @@ h1.banner_hd::after {
   width: 276px;
   height: 18px;
   position: absolute;
-  background-image: url(/img/banner_slash.png);
+  background-image: url(#);
   background-repeat: no-repeat;
   background-size: contain;
   bottom: 10px;
@@ -207,7 +207,7 @@ a.btn-primary:hover,
 .img_cntr_bnr::before {
   content: '';
   position: absolute;
-  background-image: url(/img/dots.png);
+  background-image: url(#);
   width: 174px;
   height: 167px;
   top: 0px;
@@ -279,7 +279,7 @@ section.theme-block.services {
 .serv span.svg-holder {
   background: #E6FFFB;
   display: inline-block;
-  padding: 15px;
+  /* padding: 15px; */
   border-radius: 6px;
   margin-bottom: 20px;
 }
@@ -367,7 +367,7 @@ span.ribbon {
   padding-top: 3px;
   letter-spacing: 1px;
   top: 15px;
-  background-image: url(/img/ribbon.png);
+  background-image: url(#);
   background-repeat: no-repeat;
 }
 
@@ -429,7 +429,7 @@ span.ribbon {
 /* info sec */
 
 .info-app {
-  background-image: url(/img/info-bg.png);
+  background-image: url(#);
   background-size: contain;
   padding-bottom: 0px;
   /* margin-bottom: 50px; */
@@ -698,7 +698,7 @@ img.partner-img {
 /* touch */
 
 .quick-touch {
-  background-image: url(/img/get_touch.png);
+  background-image: url(#);
   color: #fff;
 }
 
@@ -896,7 +896,7 @@ section.switch-otp {
 /* ---------------inner page------------------ */
 
 .inner_page_bnr {
-  background-image: url(/img/inner-banner.png);
+  background-image: url(#);
   background-repeat: no-repeat;
   background-size: cover;
 }

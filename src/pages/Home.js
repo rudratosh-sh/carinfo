@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import '../assets/App.css';
-import Mainbanner from '../components/home/Mainbanner';
+import TopCarousel from '../components/home/TopCarousel';
 import Service from '../components/home/Services';
-import Offer from '../components/home/offers';
-import Info from '../components/home/Infoapp';
+import Offer from '../components/home/Offers';
+import Promotion from '../components/home/Promotion';
 import News from '../components/home/News';
 import Testimo from '../components/home/Testimonials';
 import Partner from '../components/home/Partner';
@@ -20,10 +20,10 @@ const Home = () => {
             <section class="container-fluid main_cntr">
 
                 <Nav />
-                <Mainbanner />
+                <TopCarousel />
                 <Service />
                 <Offer />
-                <Info />
+                <Promotion />
                 <News />
                 <Testimo />
                 <Partner />

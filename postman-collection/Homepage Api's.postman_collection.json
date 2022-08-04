@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "825605eb-f687-48e2-a8e2-035c23f78e18",
+		"name": "Homepage Api's",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22195701"
+	},
+	"item": [
+		{
+			"name": "Top Carousel",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://run.mocky.io/v3/6ea4c8b1-f3a5-4048-8977-5f3b6913ad86",
+					"protocol": "https",
+					"host": [
+						"run",
+						"mocky",
+						"io"
+					],
+					"path": [
+						"v3",
+						"6ea4c8b1-f3a5-4048-8977-5f3b6913ad86"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All Services",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://run.mocky.io/v3/597b1be6-46af-4b24-891b-6fed4c3c6720",
+					"protocol": "https",
+					"host": [
+						"run",
+						"mocky",
+						"io"
+					],
+					"path": [
+						"v3",
+						"597b1be6-46af-4b24-891b-6fed4c3c6720"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Special Offer's",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://run.mocky.io/v3/f42b37c5-5342-4abf-af8b-dcecece26365",
+					"protocol": "https",
+					"host": [
+						"run",
+						"mocky",
+						"io"
+					],
+					"path": [
+						"v3",
+						"f42b37c5-5342-4abf-af8b-dcecece26365"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Footer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://run.mocky.io/v3/bb4ba466-1661-4b07-9f7d-8d9a39edab39",
+					"protocol": "https",
+					"host": [
+						"run",
+						"mocky",
+						"io"
+					],
+					"path": [
+						"v3",
+						"bb4ba466-1661-4b07-9f7d-8d9a39edab39"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Promote App",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://run.mocky.io/v3/ec607eaf-cdef-47d0-b663-a8112b42d957",
+					"protocol": "https",
+					"host": [
+						"run",
+						"mocky",
+						"io"
+					],
+					"path": [
+						"v3",
+						"ec607eaf-cdef-47d0-b663-a8112b42d957"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Car News",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://run.mocky.io/v3/2fca5952-c5b4-4004-af6f-1fda727766ed",
+					"protocol": "https",
+					"host": [
+						"run",
+						"mocky",
+						"io"
+					],
+					"path": [
+						"v3",
+						"2fca5952-c5b4-4004-af6f-1fda727766ed"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

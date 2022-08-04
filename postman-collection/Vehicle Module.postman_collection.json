@@ -1,0 +1,94 @@
+{
+	"info": {
+		"_postman_id": "47cf504b-a9cd-459b-83bb-3d2a70c113e2",
+		"name": "Vehicle Module",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22195701"
+	},
+	"item": [
+		{
+			"name": "New Cars",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://run.mocky.io/v3/e2736764-6407-484f-9a7a-ce6032664d93",
+					"protocol": "https",
+					"host": [
+						"run",
+						"mocky",
+						"io"
+					],
+					"path": [
+						"v3",
+						"e2736764-6407-484f-9a7a-ce6032664d93"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Model Detail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://run.mocky.io/v3/c6ebc019-7c12-4158-99da-caa5f7d1fc53",
+					"protocol": "https",
+					"host": [
+						"run",
+						"mocky",
+						"io"
+					],
+					"path": [
+						"v3",
+						"c6ebc019-7c12-4158-99da-caa5f7d1fc53"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Variant Detail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://run.mocky.io/v3/11dd1791-df8b-425d-b61a-a9619c7fd5cd",
+					"protocol": "https",
+					"host": [
+						"run",
+						"mocky",
+						"io"
+					],
+					"path": [
+						"v3",
+						"11dd1791-df8b-425d-b61a-a9619c7fd5cd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "VehicleSearch",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://run.mocky.io/v3/16ae6c65-bb48-4a35-879c-8efd01a808af",
+					"protocol": "https",
+					"host": [
+						"run",
+						"mocky",
+						"io"
+					],
+					"path": [
+						"v3",
+						"16ae6c65-bb48-4a35-879c-8efd01a808af"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

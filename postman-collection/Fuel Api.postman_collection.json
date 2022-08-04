@@ -1,0 +1,498 @@
+{
+	"info": {
+		"_postman_id": "e95f120b-0644-470c-bc54-9b1dbf37bfae",
+		"name": "Fuel Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22195701"
+	},
+	"item": [
+		{
+			"name": "Get States",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "src",
+						"value": "android_car-info"
+					},
+					{
+						"key": "appVersion",
+						"value": "251"
+					},
+					{
+						"key": "apiKey",
+						"value": ""
+					},
+					{
+						"key": "clientId",
+						"value": "android_car-info"
+					},
+					{
+						"key": "deviceId",
+						"value": "88ae8df5fea45798"
+					},
+					{
+						"key": "manufacturer",
+						"value": "Xiaomi"
+					},
+					{
+						"key": "model",
+						"value": "Redmi 7A"
+					},
+					{
+						"key": "os_version",
+						"value": "29"
+					},
+					{
+						"key": "topics_subscribed",
+						"value": "GROW, DL, ALL_USERS_V2"
+					},
+					{
+						"key": "ts",
+						"value": "1629954360910"
+					},
+					{
+						"key": "salt",
+						"value": "304"
+					},
+					{
+						"key": "auth",
+						"value": "f3fcc22cd141d80fbf547697813dd555e617a0e4353aa1d50d8ed27765f62b2349839b8b695da7f14ad6a055a97b1e7ffad60eb7e8fdb00c342393dfb7fee8a8"
+					},
+					{
+						"key": "deviceHeight",
+						"value": "1344"
+					},
+					{
+						"key": "deviceWidth",
+						"value": "720"
+					},
+					{
+						"key": "city",
+						"value": "Delhi"
+					},
+					{
+						"key": "region",
+						"value": "DL"
+					},
+					{
+						"key": "zip",
+						"value": "110054"
+					},
+					{
+						"key": "segment",
+						"value": "3"
+					},
+					{
+						"key": "fcmToken",
+						"value": "eG2L--CjTsix118FtHnbsq:APA91bEmyqThwK48xyq-Q6fANaeaaAgd6eb_L01OcBDKjBp7EN1pZrN4usixWwE9t3IgWBjF5MY3uaDArFNyLA7l1IK25FX0R0ecBxgGb2x35c2f_g2n9rg8cIUNWWT9uujaxuAK9QeY"
+					},
+					{
+						"key": "userId",
+						"value": "611ceaff7c4c9308d9138aec"
+					},
+					{
+						"key": "mobile",
+						"value": ""
+					},
+					{
+						"key": "authorization",
+						"value": ""
+					},
+					{
+						"key": "adFree",
+						"value": "false"
+					},
+					{
+						"key": "searchCount",
+						"value": "3"
+					},
+					{
+						"key": "appOpenCount",
+						"value": "13"
+					}
+				],
+				"url": {
+					"raw": "https://run.mocky.io/v3/59f32a36-12fc-4b32-946e-d0d76a1f2808",
+					"protocol": "https",
+					"host": [
+						"run",
+						"mocky",
+						"io"
+					],
+					"path": [
+						"v3",
+						"59f32a36-12fc-4b32-946e-d0d76a1f2808"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Cities",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "src",
+						"value": "android_car-info"
+					},
+					{
+						"key": "appVersion",
+						"value": "251"
+					},
+					{
+						"key": "apiKey",
+						"value": ""
+					},
+					{
+						"key": "clientId",
+						"value": "android_car-info"
+					},
+					{
+						"key": "deviceId",
+						"value": "88ae8df5fea45798"
+					},
+					{
+						"key": "manufacturer",
+						"value": "Xiaomi"
+					},
+					{
+						"key": "model",
+						"value": "Redmi 7A"
+					},
+					{
+						"key": "os_version",
+						"value": "29"
+					},
+					{
+						"key": "topics_subscribed",
+						"value": "GROW, DL, ALL_USERS_V2"
+					},
+					{
+						"key": "ts",
+						"value": "1629954360910"
+					},
+					{
+						"key": "salt",
+						"value": "304"
+					},
+					{
+						"key": "auth",
+						"value": "f3fcc22cd141d80fbf547697813dd555e617a0e4353aa1d50d8ed27765f62b2349839b8b695da7f14ad6a055a97b1e7ffad60eb7e8fdb00c342393dfb7fee8a8"
+					},
+					{
+						"key": "deviceHeight",
+						"value": "1344"
+					},
+					{
+						"key": "deviceWidth",
+						"value": "720"
+					},
+					{
+						"key": "city",
+						"value": "Delhi"
+					},
+					{
+						"key": "region",
+						"value": "DL"
+					},
+					{
+						"key": "zip",
+						"value": "110054"
+					},
+					{
+						"key": "segment",
+						"value": "3"
+					},
+					{
+						"key": "fcmToken",
+						"value": "eG2L--CjTsix118FtHnbsq:APA91bEmyqThwK48xyq-Q6fANaeaaAgd6eb_L01OcBDKjBp7EN1pZrN4usixWwE9t3IgWBjF5MY3uaDArFNyLA7l1IK25FX0R0ecBxgGb2x35c2f_g2n9rg8cIUNWWT9uujaxuAK9QeY"
+					},
+					{
+						"key": "userId",
+						"value": "611ceaff7c4c9308d9138aec"
+					},
+					{
+						"key": "mobile",
+						"value": ""
+					},
+					{
+						"key": "authorization",
+						"value": ""
+					},
+					{
+						"key": "adFree",
+						"value": "false"
+					},
+					{
+						"key": "searchCount",
+						"value": "3"
+					},
+					{
+						"key": "appOpenCount",
+						"value": "13"
+					}
+				],
+				"url": {
+					"raw": "https://run.mocky.io/v3/e434b3e9-619b-4e76-affa-f4e395c58d20",
+					"protocol": "https",
+					"host": [
+						"run",
+						"mocky",
+						"io"
+					],
+					"path": [
+						"v3",
+						"e434b3e9-619b-4e76-affa-f4e395c58d20"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Price Details",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "src",
+						"value": "android_car-info"
+					},
+					{
+						"key": "appVersion",
+						"value": "251"
+					},
+					{
+						"key": "apiKey",
+						"value": ""
+					},
+					{
+						"key": "clientId",
+						"value": "android_car-info"
+					},
+					{
+						"key": "deviceId",
+						"value": "88ae8df5fea45798"
+					},
+					{
+						"key": "manufacturer",
+						"value": "Xiaomi"
+					},
+					{
+						"key": "model",
+						"value": "Redmi 7A"
+					},
+					{
+						"key": "os_version",
+						"value": "29"
+					},
+					{
+						"key": "topics_subscribed",
+						"value": "GROW, DL, ALL_USERS_V2"
+					},
+					{
+						"key": "ts",
+						"value": "1629954360910"
+					},
+					{
+						"key": "salt",
+						"value": "304"
+					},
+					{
+						"key": "auth",
+						"value": "f3fcc22cd141d80fbf547697813dd555e617a0e4353aa1d50d8ed27765f62b2349839b8b695da7f14ad6a055a97b1e7ffad60eb7e8fdb00c342393dfb7fee8a8"
+					},
+					{
+						"key": "deviceHeight",
+						"value": "1344"
+					},
+					{
+						"key": "deviceWidth",
+						"value": "720"
+					},
+					{
+						"key": "city",
+						"value": "Delhi"
+					},
+					{
+						"key": "region",
+						"value": "DL"
+					},
+					{
+						"key": "zip",
+						"value": "110054"
+					},
+					{
+						"key": "segment",
+						"value": "3"
+					},
+					{
+						"key": "fcmToken",
+						"value": "eG2L--CjTsix118FtHnbsq:APA91bEmyqThwK48xyq-Q6fANaeaaAgd6eb_L01OcBDKjBp7EN1pZrN4usixWwE9t3IgWBjF5MY3uaDArFNyLA7l1IK25FX0R0ecBxgGb2x35c2f_g2n9rg8cIUNWWT9uujaxuAK9QeY"
+					},
+					{
+						"key": "userId",
+						"value": "611ceaff7c4c9308d9138aec"
+					},
+					{
+						"key": "mobile",
+						"value": ""
+					},
+					{
+						"key": "authorization",
+						"value": ""
+					},
+					{
+						"key": "adFree",
+						"value": "false"
+					},
+					{
+						"key": "searchCount",
+						"value": "3"
+					},
+					{
+						"key": "appOpenCount",
+						"value": "13"
+					}
+				],
+				"url": {
+					"raw": "https://run.mocky.io/v3/ec29ab10-c3d5-4c89-af7a-2512523018e7",
+					"protocol": "https",
+					"host": [
+						"run",
+						"mocky",
+						"io"
+					],
+					"path": [
+						"v3",
+						"ec29ab10-c3d5-4c89-af7a-2512523018e7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fuel Price Home",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "src",
+						"value": "android_car-info"
+					},
+					{
+						"key": "appVersion",
+						"value": "251"
+					},
+					{
+						"key": "apiKey",
+						"value": ""
+					},
+					{
+						"key": "clientId",
+						"value": "android_car-info"
+					},
+					{
+						"key": "deviceId",
+						"value": "88ae8df5fea45798"
+					},
+					{
+						"key": "manufacturer",
+						"value": "Xiaomi"
+					},
+					{
+						"key": "model",
+						"value": "Redmi 7A"
+					},
+					{
+						"key": "os_version",
+						"value": "29"
+					},
+					{
+						"key": "topics_subscribed",
+						"value": "GROW, DL, ALL_USERS_V2"
+					},
+					{
+						"key": "ts",
+						"value": "1629954360910"
+					},
+					{
+						"key": "salt",
+						"value": "304"
+					},
+					{
+						"key": "auth",
+						"value": "f3fcc22cd141d80fbf547697813dd555e617a0e4353aa1d50d8ed27765f62b2349839b8b695da7f14ad6a055a97b1e7ffad60eb7e8fdb00c342393dfb7fee8a8"
+					},
+					{
+						"key": "deviceHeight",
+						"value": "1344"
+					},
+					{
+						"key": "deviceWidth",
+						"value": "720"
+					},
+					{
+						"key": "city",
+						"value": "Delhi"
+					},
+					{
+						"key": "region",
+						"value": "DL"
+					},
+					{
+						"key": "zip",
+						"value": "110054"
+					},
+					{
+						"key": "segment",
+						"value": "3"
+					},
+					{
+						"key": "fcmToken",
+						"value": "eG2L--CjTsix118FtHnbsq:APA91bEmyqThwK48xyq-Q6fANaeaaAgd6eb_L01OcBDKjBp7EN1pZrN4usixWwE9t3IgWBjF5MY3uaDArFNyLA7l1IK25FX0R0ecBxgGb2x35c2f_g2n9rg8cIUNWWT9uujaxuAK9QeY"
+					},
+					{
+						"key": "userId",
+						"value": "611ceaff7c4c9308d9138aec"
+					},
+					{
+						"key": "mobile",
+						"value": ""
+					},
+					{
+						"key": "authorization",
+						"value": ""
+					},
+					{
+						"key": "adFree",
+						"value": "false"
+					},
+					{
+						"key": "searchCount",
+						"value": "3"
+					},
+					{
+						"key": "appOpenCount",
+						"value": "13"
+					}
+				],
+				"url": {
+					"raw": "https://run.mocky.io/v3/a644a6a2-04a5-47e9-ad55-5d56832b7881",
+					"protocol": "https",
+					"host": [
+						"run",
+						"mocky",
+						"io"
+					],
+					"path": [
+						"v3",
+						"a644a6a2-04a5-47e9-ad55-5d56832b7881"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

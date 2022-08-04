@@ -1,0 +1,2427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarInfo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+
+</head>
+
+<body>
+    <section class="container-fluid main_cntr">
+
+        <nav class="navbar navbar-expand-sm  sticky-top car-nav">
+            <section class="lg-cntr">
+                <a class="navbar-brand" href="#"><img src="img/logo.png" class="img-fluid img-logo"></a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">New Cars</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">RC Search</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Fuel Price</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Check Resale Value</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                </ul>
+            </section>
+
+            <ul class="navbar-nav">
+                <li>
+                    <div class="dropdown"> <button type="button" class="btn btn-theme-white dropdown-toggle" data-toggle="dropdown">
+                      Eng
+                      </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Hindi</a>
+                            <a class="dropdown-item" href="#">Hindi</a>
+                            <a class="dropdown-item" href="#">Hindi</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        <span class="svg-hldr loc"><svg width="11" height="13" viewBox="0 0 11 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.5 0.25C4.17437 0.251489 2.90347 0.778751 1.96611 1.71611C1.02875 2.65347 0.501489 3.92437 0.5 5.25C0.5 7.28438 1.97688 8.97375 3.54125 10.7619C4.03625 11.3281 4.54875 11.9138 5.005 12.5063C5.06339 12.582 5.13837 12.6433 5.22419 12.6855C5.31001 12.7277 5.40437 12.7497 5.5 12.7497C5.59563 12.7497 5.68999 12.7277 5.77581 12.6855C5.86163 12.6433 5.93661 12.582 5.995 12.5063C6.45125 11.9138 6.96375 11.3281 7.45875 10.7619C9.02312 8.97375 10.5 7.28438 10.5 5.25C10.4985 3.92437 9.97125 2.65347 9.03389 1.71611C8.09653 0.778751 6.82563 0.251489 5.5 0.25ZM5.5 7.125C5.12916 7.125 4.76665 7.01503 4.45831 6.80901C4.14996 6.60298 3.90964 6.31014 3.76773 5.96753C3.62581 5.62492 3.58868 5.24792 3.66103 4.88421C3.73337 4.52049 3.91195 4.1864 4.17417 3.92417C4.4364 3.66195 4.77049 3.48338 5.13421 3.41103C5.49792 3.33868 5.87492 3.37581 6.21753 3.51773C6.56014 3.65964 6.85298 3.89996 7.05901 4.20831C7.26503 4.51665 7.375 4.87916 7.375 5.25C7.375 5.74728 7.17746 6.22419 6.82583 6.57583C6.47419 6.92746 5.99728 7.125 5.5 7.125Z"
+                                    fill="#13C2C2" />
+                            </svg>
+                        </span> New Delhi
+                    </a>
+                    <div class="dropdown-menu">
+
+                        <a class="dropdown-item" href="#">
+                            <span class="svg-hldr loc"><svg width="11" height="13" viewBox="0 0 11 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.5 0.25C4.17437 0.251489 2.90347 0.778751 1.96611 1.71611C1.02875 2.65347 0.501489 3.92437 0.5 5.25C0.5 7.28438 1.97688 8.97375 3.54125 10.7619C4.03625 11.3281 4.54875 11.9138 5.005 12.5063C5.06339 12.582 5.13837 12.6433 5.22419 12.6855C5.31001 12.7277 5.40437 12.7497 5.5 12.7497C5.59563 12.7497 5.68999 12.7277 5.77581 12.6855C5.86163 12.6433 5.93661 12.582 5.995 12.5063C6.45125 11.9138 6.96375 11.3281 7.45875 10.7619C9.02312 8.97375 10.5 7.28438 10.5 5.25C10.4985 3.92437 9.97125 2.65347 9.03389 1.71611C8.09653 0.778751 6.82563 0.251489 5.5 0.25ZM5.5 7.125C5.12916 7.125 4.76665 7.01503 4.45831 6.80901C4.14996 6.60298 3.90964 6.31014 3.76773 5.96753C3.62581 5.62492 3.58868 5.24792 3.66103 4.88421C3.73337 4.52049 3.91195 4.1864 4.17417 3.92417C4.4364 3.66195 4.77049 3.48338 5.13421 3.41103C5.49792 3.33868 5.87492 3.37581 6.21753 3.51773C6.56014 3.65964 6.85298 3.89996 7.05901 4.20831C7.26503 4.51665 7.375 4.87916 7.375 5.25C7.375 5.74728 7.17746 6.22419 6.82583 6.57583C6.47419 6.92746 5.99728 7.125 5.5 7.125Z"
+                                        fill="#13C2C2" />
+                                </svg>
+                            </span> Lucknow
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="svg-hldr loc"><svg width="11" height="13" viewBox="0 0 11 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.5 0.25C4.17437 0.251489 2.90347 0.778751 1.96611 1.71611C1.02875 2.65347 0.501489 3.92437 0.5 5.25C0.5 7.28438 1.97688 8.97375 3.54125 10.7619C4.03625 11.3281 4.54875 11.9138 5.005 12.5063C5.06339 12.582 5.13837 12.6433 5.22419 12.6855C5.31001 12.7277 5.40437 12.7497 5.5 12.7497C5.59563 12.7497 5.68999 12.7277 5.77581 12.6855C5.86163 12.6433 5.93661 12.582 5.995 12.5063C6.45125 11.9138 6.96375 11.3281 7.45875 10.7619C9.02312 8.97375 10.5 7.28438 10.5 5.25C10.4985 3.92437 9.97125 2.65347 9.03389 1.71611C8.09653 0.778751 6.82563 0.251489 5.5 0.25ZM5.5 7.125C5.12916 7.125 4.76665 7.01503 4.45831 6.80901C4.14996 6.60298 3.90964 6.31014 3.76773 5.96753C3.62581 5.62492 3.58868 5.24792 3.66103 4.88421C3.73337 4.52049 3.91195 4.1864 4.17417 3.92417C4.4364 3.66195 4.77049 3.48338 5.13421 3.41103C5.49792 3.33868 5.87492 3.37581 6.21753 3.51773C6.56014 3.65964 6.85298 3.89996 7.05901 4.20831C7.26503 4.51665 7.375 4.87916 7.375 5.25C7.375 5.74728 7.17746 6.22419 6.82583 6.57583C6.47419 6.92746 5.99728 7.125 5.5 7.125Z"
+                                        fill="#13C2C2" />
+                                </svg>
+                            </span> Banglore
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <button type="button" class="btn btn-outline-success btn-outline-primary" data-toggle="modal" data-target="#myModal">Login</button>
+                </li>
+            </ul>
+        </nav>
+        <div class="theme-block main_banner inner_page_bnr">
+            <div class="fadeOut owl-carousel owl-theme mb">
+                <div class="item">
+                    <div class="row flex-align-center">
+                        <div class="col-6">
+                            <h1 class="banner_hd">Buying your dream car? Check Now!</h1>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="item">
+                    <div class="row flex-align-center">
+                        <div class="col-6">
+                            <h1 class="banner_hd">Buying your dream car? Check Now!</h1>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="item">
+                    <div class="row flex-align-center">
+                        <div class="col-6">
+                            <h1 class="banner_hd">Buying your dream car? Check Now!</h1>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+        <section class="search-component">
+            <div class="full-search form-group">
+                <input type="text" class="form-control search-inner-page" placeholder="Search car brand, models etc">
+
+                <span class="svg-holder search">
+
+                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.71 16.29L14.31 12.9C15.407 11.5025 16.0022 9.77666 16 8C16 6.41775 15.5308 4.87103 14.6518 3.55544C13.7727 2.23985 12.5233 1.21447 11.0615 0.608967C9.59966 0.00346625 7.99113 -0.15496 6.43928 0.153721C4.88743 0.462403 3.46197 1.22433 2.34315 2.34315C1.22433 3.46197 0.462403 4.88743 0.153721 6.43928C-0.15496 7.99113 0.00346625 9.59966 0.608967 11.0615C1.21447 12.5233 2.23985 13.7727 3.55544 14.6518C4.87103 15.5308 6.41775 16 8 16C9.77666 16.0022 11.5025 15.407 12.9 14.31L16.29 17.71C16.383 17.8037 16.4936 17.8781 16.6154 17.9289C16.7373 17.9797 16.868 18.0058 17 18.0058C17.132 18.0058 17.2627 17.9797 17.3846 17.9289C17.5064 17.8781 17.617 17.8037 17.71 17.71C17.8037 17.617 17.8781 17.5064 17.9289 17.3846C17.9797 17.2627 18.0058 17.132 18.0058 17C18.0058 16.868 17.9797 16.7373 17.9289 16.6154C17.8781 16.4936 17.8037 16.383 17.71 16.29ZM2 8C2 6.81332 2.3519 5.65328 3.01119 4.66658C3.67047 3.67989 4.60755 2.91085 5.7039 2.45673C6.80026 2.0026 8.00666 1.88378 9.17055 2.11529C10.3344 2.3468 11.4035 2.91825 12.2426 3.75736C13.0818 4.59648 13.6532 5.66558 13.8847 6.82946C14.1162 7.99335 13.9974 9.19975 13.5433 10.2961C13.0892 11.3925 12.3201 12.3295 11.3334 12.9888C10.3467 13.6481 9.18669 14 8 14C6.4087 14 4.88258 13.3679 3.75736 12.2426C2.63214 11.1174 2 9.5913 2 8Z" fill="#999B9B"/>
+                        </svg>
+                        
+                </span>
+            </div>
+        </section>
+        <section class="theme-block services inner-block">
+            <hgroup>
+                <h2 class="theme_hd">Popular New Cars</h2>
+            </hgroup>
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#Hatchback">Hatchback</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#Sedan">Sedan</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#SUV">SUV</a>
+                </li>
+                <li class="view-all">
+                    <a href="#">View All Cars
+                         <span class="svg-holder"><svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.99998 5.46481C7.00087 5.61038 6.97146 5.75469 6.91344 5.88946C6.85542 6.02423 6.76993 6.1468 6.66188 6.25016L1.9984 10.6747C1.77887 10.883 1.48111 11 1.17064 11C0.860166 11 0.562409 10.883 0.342872 10.6747C0.123334 10.4664 -3.56726e-08 10.1839 -4.85485e-08 9.88934C-6.14243e-08 9.59478 0.123334 9.31227 0.342872 9.10399L4.19024 5.46481L0.35453 1.82563C0.16353 1.61402 0.0637242 1.34183 0.0750578 1.06344C0.0863914 0.785053 0.20803 0.520975 0.415665 0.323979C0.623299 0.126983 0.901637 0.0115785 1.19506 0.00082583C1.48848 -0.00992686 1.77537 0.0847625 1.9984 0.265977L6.66188 4.69051C6.87727 4.89654 6.99869 5.17462 6.99998 5.46481Z" fill="#13C2C2"/>
+                        </svg>
+                        </span></a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div id="Hatchback" class="tab-pane active"><br>
+                    <div class="owl-carousel owl-theme" id="newcar">
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>Audi A4</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd2.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>BMW C300</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>Audi A4</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd2.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>BMW C300</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>Audi A4</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd2.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>BMW C300</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>Audi A4</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd2.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>BMW C300</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+
+                                </article>
+                            </aside>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="Sedan" class="tab-pane fade"><br>
+                    <div class="owl-carousel owl-theme" id="newcar-sedan">
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>Audi A4</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd2.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>BMW C300</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>Audi A4</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd2.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>BMW C300</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>Audi A4</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd2.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>BMW C300</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>Audi A4</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd2.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>BMW C300</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+
+                                </article>
+                            </aside>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="SUV" class="tab-pane fade"><br>
+                    <div class="owl-carousel owl-theme" id="newcar-suv">
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>Audi A4</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd2.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>BMW C300</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>Audi A4</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd2.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>BMW C300</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>Audi A4</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd2.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>BMW C300</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>Audi A4</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd2.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>BMW C300</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+
+                                </article>
+                            </aside>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="theme-block services inner-block">
+            <hgroup>
+                <h2 class="theme_hd">Popular used Cars</h2>
+            </hgroup>
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#u1">Under 3.5 Lakh</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#u2">Under 5 Lakh</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#u3">Above 5 Lakh</a>
+                </li>
+                <li class="view-all">
+                    <a href="#">View All Cars
+                         <span class="svg-holder"><svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.99998 5.46481C7.00087 5.61038 6.97146 5.75469 6.91344 5.88946C6.85542 6.02423 6.76993 6.1468 6.66188 6.25016L1.9984 10.6747C1.77887 10.883 1.48111 11 1.17064 11C0.860166 11 0.562409 10.883 0.342872 10.6747C0.123334 10.4664 -3.56726e-08 10.1839 -4.85485e-08 9.88934C-6.14243e-08 9.59478 0.123334 9.31227 0.342872 9.10399L4.19024 5.46481L0.35453 1.82563C0.16353 1.61402 0.0637242 1.34183 0.0750578 1.06344C0.0863914 0.785053 0.20803 0.520975 0.415665 0.323979C0.623299 0.126983 0.901637 0.0115785 1.19506 0.00082583C1.48848 -0.00992686 1.77537 0.0847625 1.9984 0.265977L6.66188 4.69051C6.87727 4.89654 6.99869 5.17462 6.99998 5.46481Z" fill="#13C2C2"/>
+                        </svg>
+                        </span></a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div id="u1" class="tab-pane active"><br>
+                    <div class="owl-carousel owl-theme" id="used1">
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>Audi A4</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd2.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>BMW C300</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>Audi A4</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd2.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>BMW C300</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>Audi A4</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd2.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>BMW C300</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>Audi A4</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd2.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>BMW C300</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+
+                                </article>
+                            </aside>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="u2" class="tab-pane fade"><br>
+                    <div class="owl-carousel owl-theme" id="used2">
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>Audi A4</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd2.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>BMW C300</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>Audi A4</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd2.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>BMW C300</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>Audi A4</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd2.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>BMW C300</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>Audi A4</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd2.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>BMW C300</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+
+                                </article>
+                            </aside>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="u3" class="tab-pane fade"><br>
+                    <div class="owl-carousel owl-theme" id="used3">
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>Audi A4</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd2.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>BMW C300</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>Audi A4</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd2.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>BMW C300</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>Audi A4</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd2.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>BMW C300</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>Audi A4</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd2.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>BMW C300</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+
+                                </article>
+                            </aside>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="theme-block services inner-block">
+            <hgroup>
+                <h2 class="theme_hd">Popular Cars by Budget</h2>
+            </hgroup>
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#bu1">Under 5 Lakh</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#bu2">5-10 Lakh</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#bu3">Above 10 Lakh</a>
+                </li>
+                <li class="view-all">
+                    <a href="#">View All Cars
+                         <span class="svg-holder"><svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.99998 5.46481C7.00087 5.61038 6.97146 5.75469 6.91344 5.88946C6.85542 6.02423 6.76993 6.1468 6.66188 6.25016L1.9984 10.6747C1.77887 10.883 1.48111 11 1.17064 11C0.860166 11 0.562409 10.883 0.342872 10.6747C0.123334 10.4664 -3.56726e-08 10.1839 -4.85485e-08 9.88934C-6.14243e-08 9.59478 0.123334 9.31227 0.342872 9.10399L4.19024 5.46481L0.35453 1.82563C0.16353 1.61402 0.0637242 1.34183 0.0750578 1.06344C0.0863914 0.785053 0.20803 0.520975 0.415665 0.323979C0.623299 0.126983 0.901637 0.0115785 1.19506 0.00082583C1.48848 -0.00992686 1.77537 0.0847625 1.9984 0.265977L6.66188 4.69051C6.87727 4.89654 6.99869 5.17462 6.99998 5.46481Z" fill="#13C2C2"/>
+                        </svg>
+                        </span></a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div id="bu1" class="tab-pane active"><br>
+                    <div class="owl-carousel owl-theme" id="bc1">
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>Audi A4</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd2.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>BMW C300</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>Audi A4</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd2.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>BMW C300</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>Audi A4</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd2.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>BMW C300</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>Audi A4</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd2.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>BMW C300</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+
+                                </article>
+                            </aside>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="bu2" class="tab-pane fade"><br>
+                    <div class="owl-carousel owl-theme" id="bc2">
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>Audi A4</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd2.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>BMW C300</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>Audi A4</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd2.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>BMW C300</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>Audi A4</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd2.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>BMW C300</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>Audi A4</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd2.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>BMW C300</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+
+                                </article>
+                            </aside>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="bu3" class="tab-pane fade"><br>
+                    <div class="owl-carousel owl-theme" id="bc3">
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>Audi A4</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd2.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>BMW C300</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>Audi A4</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd2.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>BMW C300</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>Audi A4</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd2.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>BMW C300</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>Audi A4</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd2.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>BMW C300</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+
+                                </article>
+                            </aside>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="theme-block services inner-block">
+            <hgroup>
+                <h2 class="theme_hd">Most Popular Cars</h2>
+            </hgroup>
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#bus1">Hatchback</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#bus2">Sedan</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#bus3">SUV</a>
+                </li>
+                <li class="view-all">
+                    <a href="#">View All Cars
+                         <span class="svg-holder"><svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.99998 5.46481C7.00087 5.61038 6.97146 5.75469 6.91344 5.88946C6.85542 6.02423 6.76993 6.1468 6.66188 6.25016L1.9984 10.6747C1.77887 10.883 1.48111 11 1.17064 11C0.860166 11 0.562409 10.883 0.342872 10.6747C0.123334 10.4664 -3.56726e-08 10.1839 -4.85485e-08 9.88934C-6.14243e-08 9.59478 0.123334 9.31227 0.342872 9.10399L4.19024 5.46481L0.35453 1.82563C0.16353 1.61402 0.0637242 1.34183 0.0750578 1.06344C0.0863914 0.785053 0.20803 0.520975 0.415665 0.323979C0.623299 0.126983 0.901637 0.0115785 1.19506 0.00082583C1.48848 -0.00992686 1.77537 0.0847625 1.9984 0.265977L6.66188 4.69051C6.87727 4.89654 6.99869 5.17462 6.99998 5.46481Z" fill="#13C2C2"/>
+                        </svg>
+                        </span></a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div id="bus1" class="tab-pane active"><br>
+                    <div class="owl-carousel owl-theme" id="mpc1">
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>Audi A4</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd2.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>BMW C300</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>Audi A4</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd2.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>BMW C300</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>Audi A4</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd2.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>BMW C300</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>Audi A4</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+
+                                    <img src="img/inner-prd2.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>BMW C300</h4>
+
+                                    </hgroup>
+                                    <h3><span>&#8377; 6.22 L - &#8377; 9.99 L </span></h3>
+
+                                </article>
+                            </aside>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="bus2" class="tab-pane fade"><br>
+                    <div class="owl-carousel owl-theme" id="mpc2">
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+                                    <span class="ribbon">
+                                        Hot Deal
+                                    </span>
+                                    <img src="img/offer_img.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>Audi A4</h4>
+                                        <ul class="offr">
+                                            <li>Petrol</li>
+                                            <li>Automatic</li>
+                                            <li>2 Variants</li>
+                                        </ul>
+                                    </hgroup>
+                                    <h3><span>&#8377; 33,50,589</span></h3>
+                                    <h5 class="text-success">Save upto ₹70,0000</h5>
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+                                    <span class="ribbon">
+                                        Hot Deal
+                                    </span>
+                                    <img src="img/offer_img.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>Audi A4</h4>
+                                        <ul class="offr">
+                                            <li>Petrol</li>
+                                            <li>Automatic</li>
+                                            <li>2 Variants</li>
+                                        </ul>
+                                    </hgroup>
+                                    <h3><span>&#8377; 33,50,589</span></h3>
+                                    <h5 class="text-success">Save upto ₹70,0000</h5>
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+                                    <span class="ribbon">
+                                        Hot Deal
+                                    </span>
+                                    <img src="img/offer_img.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>Audi A4</h4>
+                                        <ul class="offr">
+                                            <li>Petrol</li>
+                                            <li>Automatic</li>
+                                            <li>2 Variants</li>
+                                        </ul>
+                                    </hgroup>
+                                    <h3><span>&#8377; 33,50,589</span></h3>
+                                    <h5 class="text-success">Save upto ₹70,0000</h5>
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+                                    <span class="ribbon">
+                                        Hot Deal
+                                    </span>
+                                    <img src="img/offer_img.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>Audi A4</h4>
+                                        <ul class="offr">
+                                            <li>Petrol</li>
+                                            <li>Automatic</li>
+                                            <li>2 Variants</li>
+                                        </ul>
+                                    </hgroup>
+                                    <h3><span>&#8377; 33,50,589</span></h3>
+                                    <h5 class="text-success">Save upto ₹70,0000</h5>
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+                                    <span class="ribbon">
+                                        Hot Deal
+                                    </span>
+                                    <img src="img/offer_img.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>Audi A4</h4>
+                                        <ul class="offr">
+                                            <li>Petrol</li>
+                                            <li>Automatic</li>
+                                            <li>2 Variants</li>
+                                        </ul>
+                                    </hgroup>
+                                    <h3><span>&#8377; 33,50,589</span></h3>
+                                    <h5 class="text-success">Save upto ₹70,0000</h5>
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+                                    <span class="ribbon">
+                                        Hot Deal
+                                    </span>
+                                    <img src="img/offer_img.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>Audi A4</h4>
+                                        <ul class="offr">
+                                            <li>Petrol</li>
+                                            <li>Automatic</li>
+                                            <li>2 Variants</li>
+                                        </ul>
+                                    </hgroup>
+                                    <h3><span>&#8377; 33,50,589</span></h3>
+                                    <h5 class="text-success">Save upto ₹70,0000</h5>
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+                                    <span class="ribbon">
+                                        Hot Deal
+                                    </span>
+                                    <img src="img/offer_img.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>Audi A4</h4>
+                                        <ul class="offr">
+                                            <li>Petrol</li>
+                                            <li>Automatic</li>
+                                            <li>2 Variants</li>
+                                        </ul>
+                                    </hgroup>
+                                    <h3><span>&#8377; 33,50,589</span></h3>
+                                    <h5 class="text-success">Save upto ₹70,0000</h5>
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+                                    <span class="ribbon">
+                                        Hot Deal
+                                    </span>
+                                    <img src="img/offer_img.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>Audi A4</h4>
+                                        <ul class="offr">
+                                            <li>Petrol</li>
+                                            <li>Automatic</li>
+                                            <li>2 Variants</li>
+                                        </ul>
+                                    </hgroup>
+                                    <h3><span>&#8377; 33,50,589</span></h3>
+                                    <h5 class="text-success">Save upto ₹70,0000</h5>
+                                </article>
+                            </aside>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="bus3" class="tab-pane fade"><br>
+                    <div class="owl-carousel owl-theme" id="mpc3">
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+                                    <span class="ribbon">
+                                        Hot Deal
+                                    </span>
+                                    <img src="img/offer_img.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>Audi A4</h4>
+                                        <ul class="offr">
+                                            <li>Petrol</li>
+                                            <li>Automatic</li>
+                                            <li>2 Variants</li>
+                                        </ul>
+                                    </hgroup>
+                                    <h3><span>&#8377; 33,50,589</span></h3>
+                                    <h5 class="text-success">Save upto ₹70,0000</h5>
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+                                    <span class="ribbon">
+                                        Hot Deal
+                                    </span>
+                                    <img src="img/offer_img.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>Audi A4</h4>
+                                        <ul class="offr">
+                                            <li>Petrol</li>
+                                            <li>Automatic</li>
+                                            <li>2 Variants</li>
+                                        </ul>
+                                    </hgroup>
+                                    <h3><span>&#8377; 33,50,589</span></h3>
+                                    <h5 class="text-success">Save upto ₹70,0000</h5>
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+                                    <span class="ribbon">
+                                        Hot Deal
+                                    </span>
+                                    <img src="img/offer_img.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>Audi A4</h4>
+                                        <ul class="offr">
+                                            <li>Petrol</li>
+                                            <li>Automatic</li>
+                                            <li>2 Variants</li>
+                                        </ul>
+                                    </hgroup>
+                                    <h3><span>&#8377; 33,50,589</span></h3>
+                                    <h5 class="text-success">Save upto ₹70,0000</h5>
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+                                    <span class="ribbon">
+                                        Hot Deal
+                                    </span>
+                                    <img src="img/offer_img.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>Audi A4</h4>
+                                        <ul class="offr">
+                                            <li>Petrol</li>
+                                            <li>Automatic</li>
+                                            <li>2 Variants</li>
+                                        </ul>
+                                    </hgroup>
+                                    <h3><span>&#8377; 33,50,589</span></h3>
+                                    <h5 class="text-success">Save upto ₹70,0000</h5>
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+                                    <span class="ribbon">
+                                        Hot Deal
+                                    </span>
+                                    <img src="img/offer_img.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>Audi A4</h4>
+                                        <ul class="offr">
+                                            <li>Petrol</li>
+                                            <li>Automatic</li>
+                                            <li>2 Variants</li>
+                                        </ul>
+                                    </hgroup>
+                                    <h3><span>&#8377; 33,50,589</span></h3>
+                                    <h5 class="text-success">Save upto ₹70,0000</h5>
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+                                    <span class="ribbon">
+                                        Hot Deal
+                                    </span>
+                                    <img src="img/offer_img.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>Audi A4</h4>
+                                        <ul class="offr">
+                                            <li>Petrol</li>
+                                            <li>Automatic</li>
+                                            <li>2 Variants</li>
+                                        </ul>
+                                    </hgroup>
+                                    <h3><span>&#8377; 33,50,589</span></h3>
+                                    <h5 class="text-success">Save upto ₹70,0000</h5>
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+                                    <span class="ribbon">
+                                        Hot Deal
+                                    </span>
+                                    <img src="img/offer_img.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>Audi A4</h4>
+                                        <ul class="offr">
+                                            <li>Petrol</li>
+                                            <li>Automatic</li>
+                                            <li>2 Variants</li>
+                                        </ul>
+                                    </hgroup>
+                                    <h3><span>&#8377; 33,50,589</span></h3>
+                                    <h5 class="text-success">Save upto ₹70,0000</h5>
+                                </article>
+                            </aside>
+                        </div>
+                        <div class="item">
+                            <aside class="caro">
+                                <figure>
+                                    <span class="ribbon">
+                                        Hot Deal
+                                    </span>
+                                    <img src="img/offer_img.png" class="img-fluid">
+                                </figure>
+                                <article>
+                                    <hgroup>
+                                        <h4>Audi A4</h4>
+                                        <ul class="offr">
+                                            <li>Petrol</li>
+                                            <li>Automatic</li>
+                                            <li>2 Variants</li>
+                                        </ul>
+                                    </hgroup>
+                                    <h3><span>&#8377; 33,50,589</span></h3>
+                                    <h5 class="text-success">Save upto ₹70,0000</h5>
+                                </article>
+                            </aside>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+        <section class="theme-block news">
+            <hgroup>
+                <h2 class="theme_hd">Car News</h2>
+            </hgroup>
+            <article class="news-grid first-news ">
+                <section class="grid-item item1"><img src="img/news_car.png" class="img-fluid">
+                    <aside>
+                        <img src="img/play_btn.svg" class="img-play">
+                        <hgroup class="dtl">
+                            <h4>BMW i4 Review: Performance Sports Sedan In An Electric Guise</h4>
+                            <span class="date">24 July, 2022</span>
+                        </hgroup>
+                    </aside>
+                </section>
+            </article>
+            <article class="news-grid ">
+                <section class="grid-item item1"><img src="img/news2.png" class="img-fluid">
+                    <aside>
+                        <hgroup class="dtl">
+                            <h4>Bajaj Pulsar N160 Launched In India</h4>
+                            <span class="date">24 July, 2022</span>
+                            <p class="dtl-txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            </p>
+                            <a href="btn btn-outline-primary btn-white">Read More</a>
+                        </hgroup>
+                    </aside>
+                </section>
+            </article>
+            <article class="news-grid ">
+                <section class="grid-item item1"><img src="img/news3.png" class="img-fluid">
+                    <aside>
+                        <hgroup class="dtl">
+                            <h4>Bajaj Pulsar N160 Launched In India</h4>
+                            <span class="date">24 July, 2022</span>
+                            <p class="dtl-txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            </p>
+                            <a href="btn btn-outline-primary btn-white">Read More</a>
+                        </hgroup>
+                    </aside>
+                </section>
+            </article>
+            <article class="news-grid ">
+                <section class="grid-item item1"><img src="img/news3.png" class="img-fluid">
+                    <aside>
+                        <hgroup class="dtl">
+                            <h4>Bajaj Pulsar N160 Launched In India</h4>
+                            <span class="date">24 July, 2022</span>
+                            <p class="dtl-txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            </p>
+                            <a href="btn btn-outline-primary btn-white">Read More</a>
+                        </hgroup>
+                    </aside>
+                </section>
+            </article>
+            <article class="news-grid ">
+                <section class="grid-item item1"><img src="img/news3.png" class="img-fluid">
+                    <aside>
+                        <hgroup class="dtl">
+                            <h4>Bajaj Pulsar N160 Launched In India</h4>
+                            <span class="date">24 July, 2022</span>
+                            <p class="dtl-txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            </p>
+                            <a href="btn btn-outline-primary btn-white">Read More</a>
+                        </hgroup>
+                    </aside>
+                </section>
+            </article>
+            <article class="news-grid ">
+                <section class="grid-item item1"><img src="img/news3.png" class="img-fluid">
+                    <aside>
+                        <hgroup class="dtl">
+                            <h4>Bajaj Pulsar N160 Launched In India</h4>
+                            <span class="date">24 July, 2022</span>
+                            <p class="dtl-txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            </p>
+                            <a href="btn btn-outline-primary btn-white">Read More</a>
+                        </hgroup>
+                    </aside>
+                </section>
+            </article>
+        </section>
+
+
+        <section class="theme-block sitemap">
+            <div class="row sit-row">
+                <div class="col-3">
+                    <h3>Carinfo</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    <aside class="scl">
+                        <h4>Keep in Touch</h4>
+                        <span class="svg-holder fb">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.0001 1.37305C5.69168 1.37305 1.37329 5.69158 1.37329 10.9998C1.37329 16.3081 5.69168 20.6268 11.0001 20.6268C16.3081 20.6268 20.6269 16.3081 20.6269 10.9998C20.6269 5.69158 16.3081 1.37305 11.0001 1.37305ZM13.7209 7.4502C13.7209 7.49579 13.7028 7.5395 13.6705 7.57174C13.6383 7.60397 13.5946 7.62208 13.549 7.62208L12.4547 7.62277C11.7326 7.62277 11.6006 7.90395 11.6006 8.45773V9.60655H13.4775C13.5268 9.60655 13.5739 9.62786 13.6064 9.66498C13.6389 9.70211 13.654 9.75144 13.648 9.80042L13.3807 11.8686C13.3754 11.91 13.3551 11.9481 13.3238 11.9757C13.2924 12.0033 13.252 12.0185 13.2102 12.0185H11.6006V17.1539C11.6006 17.1995 11.5825 17.2432 11.5503 17.2755C11.518 17.3077 11.4743 17.3258 11.4287 17.3258H9.29335C9.24777 17.3258 9.20405 17.3077 9.17182 17.2755C9.13959 17.2432 9.12148 17.1995 9.12148 17.1539V12.0185H7.5067C7.46111 12.0185 7.4174 12.0004 7.38516 11.9681C7.35293 11.9359 7.33482 11.8922 7.33482 11.8466V9.77842C7.33482 9.73284 7.35293 9.68912 7.38516 9.65689C7.4174 9.62466 7.46111 9.60655 7.5067 9.60655H9.12148V8.25303C9.12148 6.46038 10.2064 5.34697 11.9531 5.34697C12.7041 5.34697 13.3677 5.40283 13.5715 5.42981C13.6128 5.43527 13.6508 5.45555 13.6782 5.48689C13.7057 5.51822 13.7209 5.55847 13.7209 5.60014V7.4502Z"
+                                    fill="white" />
+                            </svg>
+
+                        </span>
+                        <span class="svg-holder fb">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.9998 1.37305C5.69182 1.37305 1.37329 5.69158 1.37329 10.9998C1.37329 16.3081 5.69182 20.6268 10.9998 20.6268C16.3082 20.6268 20.6267 16.3081 20.6267 10.9998C20.6266 5.69158 16.308 1.37305 10.9998 1.37305ZM16.1234 8.48902C15.8682 8.87125 15.5507 9.20808 15.1843 9.48555C15.1859 9.54141 15.1869 9.59727 15.1869 9.65313C15.1869 12.4605 13.0506 15.3644 9.47565 15.3644C8.38469 15.3649 7.31653 15.052 6.39823 14.463C6.36549 14.4421 6.34082 14.4107 6.32827 14.374C6.31572 14.3372 6.31602 14.2973 6.32913 14.2607C6.34189 14.224 6.36687 14.1927 6.3999 14.1721C6.43293 14.1515 6.47201 14.1429 6.51063 14.1477C6.66137 14.165 6.81073 14.1736 6.95476 14.1736C7.65601 14.1736 8.32426 13.9851 8.91087 13.6248C8.55758 13.5395 8.23219 13.3647 7.96603 13.1173C7.69986 12.8698 7.50188 12.558 7.39115 12.2118C7.38208 12.1834 7.38055 12.1531 7.3867 12.1239C7.39284 12.0947 7.40646 12.0676 7.42621 12.0453C7.44597 12.0229 7.47126 12.0061 7.49955 11.9965C7.52784 11.987 7.55814 11.985 7.58743 11.9908C7.61974 11.997 7.65223 12.0023 7.68454 12.0068C7.08762 11.6264 6.70039 10.9577 6.70039 10.2172V10.1926C6.7004 10.1627 6.70822 10.1333 6.72308 10.1074C6.73793 10.0814 6.7593 10.0598 6.78508 10.0446C6.81086 10.0294 6.84015 10.0213 6.87006 10.0209C6.89997 10.0205 6.92946 10.0279 6.95562 10.0424C7.03039 10.0838 7.1079 10.1198 7.18748 10.15C6.88204 9.77252 6.71565 9.30151 6.7162 8.81592C6.7162 8.44158 6.81537 8.07308 7.00288 7.75047C7.01684 7.72642 7.03642 7.70611 7.05995 7.6913C7.08348 7.67648 7.11025 7.66759 7.13796 7.66539C7.16568 7.6632 7.19352 7.66776 7.21909 7.67868C7.24465 7.68961 7.26719 7.70657 7.28476 7.72813C8.19896 8.84909 9.5279 9.5543 10.9574 9.68423C10.9473 9.59907 10.9422 9.51339 10.9423 9.42763C10.9423 8.25939 11.8929 7.30892 13.0613 7.30892C13.6125 7.30892 14.1458 7.52634 14.5393 7.90825C14.9238 7.82265 15.2922 7.67651 15.6308 7.4753C15.6393 7.44878 15.654 7.42471 15.6739 7.40515C15.6937 7.3856 15.7179 7.37115 15.7445 7.36304C15.7712 7.35494 15.7994 7.35342 15.8267 7.35861C15.854 7.36381 15.8797 7.37557 15.9015 7.39289C15.9233 7.4102 15.9406 7.43254 15.9518 7.458C15.9631 7.48346 15.968 7.51127 15.9661 7.53904C15.9642 7.56681 15.9556 7.59371 15.9411 7.61742C15.9265 7.64114 15.9064 7.66096 15.8825 7.67519C15.7983 7.93906 15.6628 8.18369 15.4837 8.395C15.6294 8.35101 15.7721 8.29797 15.9112 8.23619C15.9452 8.22115 15.9832 8.21757 16.0195 8.226C16.0558 8.23442 16.0883 8.25439 16.1122 8.2829C16.1362 8.31141 16.1502 8.34692 16.1522 8.38409C16.1542 8.42126 16.1441 8.45808 16.1234 8.48902Z"
+                                    fill="white" />
+                            </svg>
+
+                        </span>
+                        <span class="svg-holder fb">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_43_3304)">
+                                    <path
+                                        d="M13.498 6.651C13.4147 6.43525 13.2871 6.23934 13.1235 6.07589C12.9599 5.91244 12.7638 5.78508 12.548 5.702C12.2508 5.59193 11.9369 5.53375 11.62 5.53C11.093 5.506 10.935 5.5 9.6 5.5C8.265 5.5 8.107 5.506 7.58 5.53C7.26276 5.53363 6.94851 5.59181 6.651 5.702C6.43525 5.7853 6.23934 5.91287 6.07589 6.0765C5.91244 6.24012 5.78508 6.43616 5.702 6.652C5.59193 6.9492 5.53375 7.2631 5.53 7.58C5.506 8.107 5.5 8.265 5.5 9.6C5.5 10.935 5.506 11.093 5.53 11.62C5.53363 11.9372 5.59181 12.2515 5.702 12.549C5.7853 12.7648 5.91287 12.9607 6.0765 13.1241C6.24012 13.2876 6.43616 13.4149 6.652 13.498C6.9492 13.6081 7.2631 13.6663 7.58 13.67C8.107 13.694 8.265 13.7 9.6 13.7C10.935 13.7 11.093 13.694 11.62 13.67C11.9372 13.6664 12.2515 13.6082 12.549 13.498C12.7648 13.4147 12.9607 13.2871 13.1241 13.1235C13.2876 12.9599 13.4149 12.7638 13.498 12.548C13.6081 12.2508 13.6663 11.9369 13.67 11.62C13.694 11.093 13.7 10.935 13.7 9.6C13.7 8.265 13.694 8.107 13.67 7.58C13.6664 7.26276 13.6082 6.94851 13.498 6.651ZM9.6 12.168C9.0921 12.168 8.5956 12.0174 8.1733 11.7352C7.75099 11.453 7.42184 11.052 7.22748 10.5827C7.03311 10.1135 6.98226 9.59715 7.08134 9.09901C7.18043 8.60086 7.42501 8.14329 7.78415 7.78415C8.14329 7.42501 8.60086 7.18043 9.09901 7.08134C9.59715 6.98226 10.1135 7.03311 10.5827 7.22748C11.052 7.42184 11.453 7.75099 11.7352 8.1733C12.0174 8.5956 12.168 9.0921 12.168 9.6C12.168 10.2811 11.8974 10.9343 11.4159 11.4159C10.9343 11.8974 10.2811 12.168 9.6 12.168ZM12.269 7.531C12.1503 7.531 12.0343 7.49581 11.9357 7.42988C11.837 7.36395 11.7601 7.27025 11.7147 7.16061C11.6693 7.05097 11.6574 6.93033 11.6805 6.81395C11.7037 6.69756 11.7608 6.59065 11.8447 6.50674C11.9286 6.42282 12.0356 6.36568 12.1519 6.34253C12.2683 6.31938 12.389 6.33126 12.4986 6.37667C12.6082 6.42208 12.702 6.49899 12.7679 6.59766C12.8338 6.69633 12.869 6.81233 12.869 6.931C12.869 7.09013 12.8058 7.24274 12.6933 7.35526C12.5807 7.46779 12.4281 7.531 12.269 7.531Z"
+                                        fill="white" />
+                                    <path
+                                        d="M9.59998 11.2671C10.5206 11.2671 11.267 10.5208 11.267 9.60011C11.267 8.67945 10.5206 7.93311 9.59998 7.93311C8.67932 7.93311 7.93298 8.67945 7.93298 9.60011C7.93298 10.5208 8.67932 11.2671 9.59998 11.2671Z"
+                                        fill="white" />
+                                    <path
+                                        d="M9.6 0C7.7013 0 5.84524 0.56303 4.26653 1.61789C2.68782 2.67275 1.45736 4.17207 0.730761 5.92624C0.00415951 7.68041 -0.185952 9.61065 0.184466 11.4729C0.554884 13.3351 1.46919 15.0456 2.81178 16.3882C4.15436 17.7308 5.86492 18.6451 7.72714 19.0155C9.58936 19.386 11.5196 19.1958 13.2738 18.4692C15.0279 17.7426 16.5273 16.5122 17.5821 14.9335C18.637 13.3548 19.2 11.4987 19.2 9.6C19.2 8.33931 18.9517 7.09096 18.4692 5.92624C17.9868 4.76151 17.2797 3.70322 16.3882 2.81177C15.4968 1.92033 14.4385 1.2132 13.2738 0.730757C12.109 0.248311 10.8607 0 9.6 0ZM14.57 11.662C14.5614 12.0766 14.4826 12.4867 14.337 12.875C14.2086 13.2071 14.0122 13.5087 13.7604 13.7604C13.5087 14.0122 13.2071 14.2086 12.875 14.337C12.4867 14.4826 12.0766 14.5614 11.662 14.57C11.128 14.594 10.958 14.6 9.6 14.6C8.242 14.6 8.072 14.594 7.538 14.57C7.12341 14.5614 6.71327 14.4826 6.325 14.337C5.99293 14.2086 5.69134 14.0122 5.43958 13.7604C5.18782 13.5087 4.99143 13.2071 4.863 12.875C4.71737 12.4867 4.63858 12.0766 4.63 11.662C4.606 11.128 4.6 10.958 4.6 9.6C4.6 8.242 4.606 8.072 4.63 7.538C4.63858 7.12341 4.71737 6.71327 4.863 6.325C4.99143 5.99292 5.18782 5.69134 5.43958 5.43957C5.69134 5.18781 5.99293 4.99142 6.325 4.863C6.71327 4.71736 7.12341 4.63858 7.538 4.63C8.072 4.606 8.242 4.6 9.6 4.6C10.958 4.6 11.128 4.606 11.662 4.63C12.0766 4.63858 12.4867 4.71736 12.875 4.863C13.2071 4.99142 13.5087 5.18781 13.7604 5.43957C14.0122 5.69134 14.2086 5.99292 14.337 6.325C14.4826 6.71327 14.5614 7.12341 14.57 7.538C14.594 8.072 14.6 8.242 14.6 9.6C14.6 10.958 14.594 11.128 14.57 11.662Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_43_3304">
+                                        <rect width="19.2" height="19.2" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </span>
+                    </aside>
+                </div>
+                <div class="col stmp">
+                    <h4>CarInfo
+                    </h4>
+                    <ul>
+                        <li> About Us</li>
+                        <li> Terms and Conditions</li>
+                        <li> New Cars</li>
+                        <li> Used Cars</li>
+                        <li> New Bikes </li>
+                        <li> Sell Your Car</li>
+                    </ul>
+                </div>
+                <div class="col stmp">
+                    <h4> Popular Car Brands
+
+                    </h4>
+                    <ul>
+                        <li> Maruti Suzuki
+                        </li>
+                        <li> Hyundai
+                        </li>
+                        <li> Tata
+                        </li>
+                        <li> Volkswagen
+                        </li>
+                        <li> Honda
+                        </li>
+                        <li> Mahindra</li>
+                    </ul>
+                </div>
+                <div class="col stmp">
+                    <h4> Popular Car Models
+                    </h4>
+                    <ul>
+                        <li> Mahindra XUV 700
+
+                        </li>
+                        <li> Kia Seltos
+
+                        </li>
+                        <li> Mahindra Thar
+
+                        </li>
+                        <li> Tata Nexon
+
+                        </li>
+                        <li> Kia Sonet
+
+                        </li>
+                        <li> Tata Punch</li>
+                    </ul>
+                </div>
+                <div class="col stmp">
+                    <h4> Popular Bike Brands </h4>
+                    <ul>
+                        <li> Royal Enfield</li>
+                        <li> Honda</li>
+                        <li> KTM </li>
+                        <li> Bajaj </li>
+                        <li> Yamaha </li>
+                        <li> TVS</li>
+                    </ul>
+                </div>
+                <div class="col stmp">
+                    <h4> Popular Bike Models
+                    </h4>
+                    <ul>
+                        <li> Royal Enfield Classic 350
+                        </li>
+                        <li> Yamaha MT-15
+                        </li>
+                        <li> Bajaj Pulsar 220
+                        </li>
+                        <li> KTM RC 200
+                        </li>
+                        <li> Hero Splendor Plus
+                        </li>
+                        <li> Bajaj Pulsar 150</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <footer class="main-footer ">
+            <p class="text-center">All rights reserved ©2022 CarInfo.</p>
+        </footer>
+
+
+        <!--Login Modal Popup -->
+
+
+
+        <div class="modal login-modal" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="row modal-theme mx-0">
+                            <div class="col-5 color-login">
+                                <hgroup>
+                                    <h3>Carinfo</h3>
+                                    <p>One stop shop for all your automobiles needs.</p>
+                                </hgroup>
+                                <figure>
+                                    <img src="img/login-img.png" class="img-fluid">
+                                </figure>
+                            </div>
+                            <div class="col-7 ">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <section class="switch-phn-login">
+                                    <h4 class="login-txt-black">
+                                        To login, please enter your mobile number.
+                                    </h4>
+                                    <div class="form-group">
+                                        <input type="tel" class="form-control phn-login" placeholder="Mobile Number">
+                                    </div>
+                                    <button class="btn btn-block btn-theme align-center" id="sendotp">SEND OTP</button>
+                                    <p class="text-center seprator"> Or Login Via</p>
+                                    <div class="isflex netlogin">
+                                        <button class="btn btn-white-theme">
+                                            <span class="svg-holder">
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M19.9895 10.1871C19.9895 9.36771 19.9214 8.76977 19.7742 8.1497H10.1992V11.848H15.8195C15.7062 12.7671 15.0943 14.1512 13.7346 15.0813L13.7155 15.2051L16.7429 17.4969L16.9527 17.5174C18.879 15.7789 19.9895 13.2211 19.9895 10.1871Z"
+                                                        fill="#4285F4" />
+                                                    <path
+                                                        d="M10.1993 19.9313C12.9527 19.9313 15.2643 19.0454 16.9527 17.5174L13.7346 15.0813C12.8734 15.6682 11.7176 16.0779 10.1993 16.0779C7.50243 16.0779 5.21352 14.3395 4.39759 11.9366L4.27799 11.9466L1.13003 14.3273L1.08887 14.4391C2.76588 17.6945 6.21061 19.9313 10.1993 19.9313Z"
+                                                        fill="#34A853" />
+                                                    <path
+                                                        d="M4.39748 11.9366C4.18219 11.3166 4.05759 10.6521 4.05759 9.96565C4.05759 9.27908 4.18219 8.61473 4.38615 7.99466L4.38045 7.8626L1.19304 5.44366L1.08876 5.49214C0.397576 6.84305 0.000976562 8.36008 0.000976562 9.96565C0.000976562 11.5712 0.397576 13.0882 1.08876 14.4391L4.39748 11.9366Z"
+                                                        fill="#FBBC05" />
+                                                    <path
+                                                        d="M10.1993 3.85336C12.1142 3.85336 13.406 4.66168 14.1425 5.33718L17.0207 2.59107C15.253 0.985496 12.9527 0 10.1993 0C6.2106 0 2.76588 2.23672 1.08887 5.49214L4.38626 7.99466C5.21352 5.59183 7.50242 3.85336 10.1993 3.85336Z"
+                                                        fill="#EB4335" />
+                                                </svg>
+
+                                            </span>
+                                            Google
+                                        </button>
+                                        <button class="btn btn-white-theme">
+                                            <span class="svg-holder">
+                                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <mask id="mask0_285_366" style="mask-type:alpha"
+                                                        maskUnits="userSpaceOnUse" x="0" y="0" width="21" height="21">
+                                                        <rect width="21" height="21" fill="#D9D9D9" />
+                                                    </mask>
+                                                    <g mask="url(#mask0_285_366)">
+                                                        <rect x="-4" y="-4" width="30" height="30"
+                                                            fill="url(#pattern0)" />
+                                                    </g>
+                                                    <defs>
+                                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox"
+                                                            width="1" height="1">
+                                                            <use xlink:href="#image0_285_366"
+                                                                transform="scale(0.000934579)" />
+                                                        </pattern>
+                                                        <image id="image0_285_366" width="1070" height="1070"
+                                                            xlink:href="data:image/png;base64,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" />
+                                                    </defs>
+                                                </svg>
+
+
+                                            </span>
+                                            Trueculler
+                                        </button>
+                                    </div>
+                                </section>
+                                <section class="switch-otp">
+                                    <h4 class="login-txt-black otp-h4">
+                                        Please enter 4 digit OTP sent on 9876543211 <a href="#">Change Number</a>
+                                    </h4>
+                                    <div class="form-group flex-group">
+                                        <input type="text" class="form-control phn-login otp-only">
+                                        <input type="text" class="form-control phn-login otp-only">
+                                        <input type="text" class="form-control phn-login otp-only">
+                                        <input type="text" class="form-control phn-login otp-only">
+
+                                    </div>
+                                    <p class="not-rec">Didn't receive the OTP yet? <a href="#"> Resend OTP</a></p>
+                                    <button class="btn btn-block btn-theme align-center">CONFIRM OTP</button>
+
+                                </section>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- jQuery library -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- latest owl carouseal -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script>
+            jQuery(document).ready(function($) {
+                $('.fadeOut').owlCarousel({
+                    items: 1,
+                    animateOut: 'fadeOut',
+                    animateIn: 'fadeIn',
+                    smartSpeed: 450,
+                    // autoplay: true,
+                    nav: false,
+
+                    loop: true,
+                    margin: 10,
+                });
+                // $('.custom1').owlCarousel({
+                //     animateOut: 'slideOutDown',
+                //     animateIn: 'flipInX',
+                //     items: 1,
+                //     margin: 30,
+                //     stagePadding: 30,
+                //     smartSpeed: 450
+                // });
+                var owl2 = $('#testm');
+                owl2.owlCarousel({
+                    items: 3,
+                    loop: true,
+                    dots: false,
+                    nav: true,
+                    margin: 10,
+                    // autoplay: true,
+                    autoplayTimeout: 2000,
+                    autoplayHoverPause: true
+                });
+
+                var owl = $('#newcar');
+                owl.owlCarousel({
+                    items: 4,
+                    loop: true,
+                    dots: false,
+                    nav: true,
+                    margin: 10,
+                    // autoplay: true,
+                    autoplayTimeout: 2000,
+                    autoplayHoverPause: true
+                });
+                var owl3 = $('#newcar-sedan');
+                owl3.owlCarousel({
+                    items: 4,
+                    loop: true,
+                    dots: false,
+                    nav: true,
+                    margin: 10,
+                    // autoplay: true,
+                    autoplayTimeout: 2000,
+                    autoplayHoverPause: true
+                });
+                var owl4 = $('#newcar-suv');
+                owl4.owlCarousel({
+                    items: 4,
+                    loop: true,
+                    dots: false,
+                    nav: true,
+                    margin: 10,
+                    // autoplay: true,
+                    autoplayTimeout: 2000,
+                    autoplayHoverPause: true
+                });
+                var owl5 = $('#used1');
+                owl5.owlCarousel({
+                    items: 4,
+                    loop: true,
+                    dots: false,
+                    nav: true,
+                    margin: 10,
+                    // autoplay: true,
+                    autoplayTimeout: 2000,
+                    autoplayHoverPause: true
+                });
+                var owl6 = $('#used2');
+                owl6.owlCarousel({
+                    items: 4,
+                    loop: true,
+                    dots: false,
+                    nav: true,
+                    margin: 10,
+                    // autoplay: true,
+                    autoplayTimeout: 2000,
+                    autoplayHoverPause: true
+                });
+                var owl7 = $('#used3');
+                owl7.owlCarousel({
+                    items: 4,
+                    loop: true,
+                    dots: false,
+                    nav: true,
+                    margin: 10,
+                    // autoplay: true,
+                    autoplayTimeout: 2000,
+                    autoplayHoverPause: true
+                });
+                var owl8 = $('#bc1');
+                owl8.owlCarousel({
+                    items: 4,
+                    loop: true,
+                    dots: false,
+                    nav: true,
+                    margin: 10,
+                    // autoplay: true,
+                    autoplayTimeout: 2000,
+                    autoplayHoverPause: true
+                });
+                var owl9 = $('#bc2');
+                owl9.owlCarousel({
+                    items: 4,
+                    loop: true,
+                    dots: false,
+                    nav: true,
+                    margin: 10,
+                    // autoplay: true,
+                    autoplayTimeout: 2000,
+                    autoplayHoverPause: true
+                });
+                var owl10 = $('#bc3');
+                owl10.owlCarousel({
+                    items: 4,
+                    loop: true,
+                    dots: false,
+                    nav: true,
+                    margin: 10,
+                    // autoplay: true,
+                    autoplayTimeout: 2000,
+                    autoplayHoverPause: true
+                });
+                var owl11 = $('#mpc1');
+                owl11.owlCarousel({
+                    items: 4,
+                    loop: true,
+                    dots: false,
+                    nav: true,
+                    margin: 10,
+                    // autoplay: true,
+                    autoplayTimeout: 2000,
+                    autoplayHoverPause: true
+                });
+                var owl12 = $('#mpc2');
+                owl12.owlCarousel({
+                    items: 4,
+                    loop: true,
+                    dots: false,
+                    nav: true,
+                    margin: 10,
+                    // autoplay: true,
+                    autoplayTimeout: 2000,
+                    autoplayHoverPause: true
+                });
+                var owl13 = $('#mpc3');
+                owl13.owlCarousel({
+                    items: 4,
+                    loop: true,
+                    dots: false,
+                    nav: true,
+                    margin: 10,
+                    // autoplay: true,
+                    autoplayTimeout: 2000,
+                    autoplayHoverPause: true
+                });
+
+                $('.switch-otp').hide();
+
+                $('#sendotp').click(function() {
+                    $('.switch-phn-login').hide(1000);
+                    $('.switch-otp').show(1000);
+
+                });
+
+            });
+        </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+{
+	"info": {
+		"_postman_id": "20db129f-d5cc-488e-944a-da9d6ee7b4d2",
+		"name": "Resale Value",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22195701"
+	},
+	"item": [
+		{
+			"name": "Select Type",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://run.mocky.io/v3/0425f09c-5f82-4646-bc68-e9295e4f3957",
+					"protocol": "https",
+					"host": [
+						"run",
+						"mocky",
+						"io"
+					],
+					"path": [
+						"v3",
+						"0425f09c-5f82-4646-bc68-e9295e4f3957"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Select Brand",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://run.mocky.io/v3/34834483-b8f2-450a-b078-d76ce8dcc87c",
+					"protocol": "https",
+					"host": [
+						"run",
+						"mocky",
+						"io"
+					],
+					"path": [
+						"v3",
+						"34834483-b8f2-450a-b078-d76ce8dcc87c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Select Model",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://run.mocky.io/v3/01bca6ac-175c-4065-bfbb-f365d88179ce",
+					"protocol": "https",
+					"host": [
+						"run",
+						"mocky",
+						"io"
+					],
+					"path": [
+						"v3",
+						"01bca6ac-175c-4065-bfbb-f365d88179ce"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Select Year",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://run.mocky.io/v3/a2c34166-99d6-4e66-8f32-0b52b0cc61a0",
+					"protocol": "https",
+					"host": [
+						"run",
+						"mocky",
+						"io"
+					],
+					"path": [
+						"v3",
+						"a2c34166-99d6-4e66-8f32-0b52b0cc61a0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Select Variant",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://run.mocky.io/v3/351334a6-4cc5-4ec5-abf1-f6c0e0d054d9",
+					"protocol": "https",
+					"host": [
+						"run",
+						"mocky",
+						"io"
+					],
+					"path": [
+						"v3",
+						"351334a6-4cc5-4ec5-abf1-f6c0e0d054d9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Select Kms",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://run.mocky.io/v3/33b316ba-7828-40bf-ab18-ba60ac695f01",
+					"protocol": "https",
+					"host": [
+						"run",
+						"mocky",
+						"io"
+					],
+					"path": [
+						"v3",
+						"33b316ba-7828-40bf-ab18-ba60ac695f01"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Evalute",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://run.mocky.io/v3/6249d111-5433-4e2c-88ae-e7874e3d9544",
+					"protocol": "https",
+					"host": [
+						"run",
+						"mocky",
+						"io"
+					],
+					"path": [
+						"v3",
+						"6249d111-5433-4e2c-88ae-e7874e3d9544"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
